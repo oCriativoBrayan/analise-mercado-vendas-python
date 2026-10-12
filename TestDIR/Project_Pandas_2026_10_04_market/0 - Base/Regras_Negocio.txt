@@ -1,0 +1,91 @@
+## REGRAS DE NEGOCIO ##
+
+
+Nome ao chamar arquivos
+
+NOME_NOME.ipynb
+
+
+Nome ao chamar tabela
+
+DF_NOME
+
+
+-----------------------------------------------
+
+CADASTRO - OK
+
+'COD_PROD': Int64, unico
+'CATEGORIA_BRUTA': Maiuscula
+'NOME_PRODUTO': Apenas nome
+'VALOR_VENDA_CADASTRO': Float , NaN = 0 , "str" = 0
+'CUSTO_CADASTRO': Float , NaN = 0 , "str" = 0
+
+CRIAR:
+
+VENDAS
+MARGEM
+PESO
+
+---------------------------------------------
+
+PERDAS - ok
+
+'DATA_OCORRENCIA': DATA
+'SETOR_ORIGEM': Maiuscula
+'DESCRICAO_MOTIVO_TEXTO_LIVRE': str
+'COD_PROD_OU_NOME': Int64, 'str' = numero pre definido
+'QTD_AVARIADA':  Float
+'VALOR_ESTIMADO_PREJUIZO':  Float , NaN = 0 , "str" = 0 remover "R$ " ou qualquer caraacter especial
+'REGISTRADO_POR': Maiuscula, DESCONHECIDO = Desc
+
+CRIAR:
+
+ANO
+MES
+DIA
+COD_PROD
+
+-----------------------------------------
+
+COMPRAS
+
+'NUM_NOTA_FISCAL': retirar "NF-"
+'DATA_ENTRADA': Data
+'FORNECEDOR': Maiuscula, Primeiro nome
+'COD_PROD': Int64
+'QTD_COMPRADA': Int64, retirar "str"
+'VALOR_TOTAL_NOTA':  Float , NaN = 0 , "str" = 0
+'RESPONSAVEL_RECEBIMENTO': maiusculo, "NaN" = Desc
+
+CRIAR:
+
+ANO
+MES
+DIA
+PRECO_UNIT
+ID_FORNECEDOR
+
+---------------------------------
+
+VENDAS
+
+''ID_TRANSACAO': Int64
+'DATA_HORA_VENDA': Data
+'PDV_CAIXA': maiuscula, padrao "CX_NUMERO"
+'OPERADOR': Maiscula, NaN = Desc
+'COD_PRODUTO': INT64, "NaN" = 1000001
+'QTD_VENDIDA': INT64
+'PRECO_UNIT_COBRADO': Float , NaN = 0 , "str" = 0
+'TOTAL_PAGO': Float , NaN = 0 , "str" = 0
+'FORMA_PAGTO': maiuscula, "NOME_NOME"
+'STATUS_VENDA': Maiuscula, "CONCLUIDA" - "PENDENTE" - "RECUSADO" - "CANCELADO"
+
+CRIAR:
+ANO
+MES
+DIA
+DIF_VENDA
+
+----------------------------------------
+

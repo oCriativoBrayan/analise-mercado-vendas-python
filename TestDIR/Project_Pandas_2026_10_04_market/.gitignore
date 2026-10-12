@@ -1,0 +1,21 @@
+
+# Arquivos temporários do Jupyter
+.ipynb_checkpoints/
+
+# Cache do Python
+__pycache__/
+*.pyc
+
+# Ambientes virtuais
+.venv/
+venv/
+
+# Credenciais e segredos
+.env
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db
+
+#arquivos importantes
+backup/
