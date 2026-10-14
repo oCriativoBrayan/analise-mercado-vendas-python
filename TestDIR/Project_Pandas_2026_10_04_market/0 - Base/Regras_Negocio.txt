@@ -37,7 +37,7 @@ PERDAS - ok
 'COD_PROD_OU_NOME': Int64, 'str' = numero pre definido
 'QTD_AVARIADA':  Float
 'VALOR_ESTIMADO_PREJUIZO':  Float , NaN = 0 , "str" = 0 remover "R$ " ou qualquer caraacter especial
-'REGISTRADO_POR': Maiuscula, DESCONHECIDO = Desc
+'REGISTRADO_POR': Maiuscula, DESCONHECIDO = DESC
 
 CRIAR:
 
