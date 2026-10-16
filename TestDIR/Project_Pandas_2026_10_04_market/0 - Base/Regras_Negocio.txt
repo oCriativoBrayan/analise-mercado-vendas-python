@@ -23,9 +23,9 @@ CADASTRO - OK
 
 CRIAR:
 
-VENDAS
-MARGEM
-PESO
+VENDAS ok
+MARGEM ok
+PESO pl
 
 ---------------------------------------------
 
@@ -41,10 +41,10 @@ PERDAS - ok
 
 CRIAR:
 
-ANO
-MES
-DIA
-COD_PROD
+ANO ok
+MES ok
+DIA ok
+COD_PROD ok
 
 -----------------------------------------
 
@@ -56,15 +56,15 @@ COMPRAS
 'COD_PROD': Int64
 'QTD_COMPRADA': Int64, retirar "str"
 'VALOR_TOTAL_NOTA':  Float , NaN = 0 , "str" = 0
-'RESPONSAVEL_RECEBIMENTO': maiusculo, "NaN" = Desc
+'RESPONSAVEL_RECEBIMENTO': maiusculo, "NaN" = "DESC", "DESCONHECIDO" = "DESC"
 
 CRIAR:
 
-ANO
-MES
-DIA
-PRECO_UNIT
-ID_FORNECEDOR
+ANO ok
+MES ok
+DIA ok
+PRECO_UNIT ok
+ID_FORNECEDOR ok
 
 ---------------------------------
 
@@ -78,14 +78,13 @@ VENDAS
 'QTD_VENDIDA': INT64
 'PRECO_UNIT_COBRADO': Float , NaN = 0 , "str" = 0
 'TOTAL_PAGO': Float , NaN = 0 , "str" = 0
-'FORMA_PAGTO': maiuscula, "NOME_NOME"
+'FORMA_PAGTO': maiuscula, "NOME_NOME", '' = 'INDEFINIDO'
 'STATUS_VENDA': Maiuscula, "CONCLUIDA" - "PENDENTE" - "RECUSADO" - "CANCELADO"
 
 CRIAR:
-ANO
-MES
-DIA
-DIF_VENDA
+ANO ok
+MES ok 
+DIF_VENDA ok
 
 ----------------------------------------
 
